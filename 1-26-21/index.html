@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script>
+      function update() {
+        var left = Number(document.getElementById("left").value);
+        var right = Number(document.getElementById("right").value);
+
+        var sum = add(left, right);
+
+        document.getElementById("result").innerText = sum;
+      }
+
+      function add(a, b) {
+        return a + b;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      My Website
+    </h1>
+
+    <input id="left">
+    </input>
+
+    <input id="right">
+    </input>
+
+    <div id="result"></div>
+ 
+    <button onclick="update()">
+      click
+    </button> 
+  </body>
+</html>

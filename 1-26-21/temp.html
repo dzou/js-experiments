@@ -1,0 +1,45 @@
+<html>
+    <head>
+      <script>
+        var count = 1000;
+        
+        function update1()
+        {
+          count=count+1;
+          document.getElementById("message").innerText =
+              "The temperature is " + count + " degrees fahrenheit";
+        }
+
+        function update2()
+        {
+          count=count-1;
+          document.getElementById("message").innerText =
+              "The temperature is " + count + " degrees fahrenheit";
+        }
+      </script>
+    </head>
+
+    <body>
+        <h1>
+            Home Theromstat
+        </h1>
+
+        <h2>
+            Adjust the temperature
+        </h2>
+
+        <div id="message">
+            The temperature is 0 degrees fahrenheit
+        </div>
+
+        <button onclick="update1()">
+            ▲
+        </button>
+
+        <br/>
+        <button onclick="update2()">
+            ▼
+        </button>
+    </body>
+
+</html>
